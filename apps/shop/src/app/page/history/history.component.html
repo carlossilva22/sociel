@@ -1,0 +1,91 @@
+<div id="fabrica">
+  <div class="container1">
+    <div class="cta">
+      <div class="cta-text-box">
+        <h2 class="heading-secondary">Fábrica Sociel, Lda</h2>
+        <div class="titulo">Uma História de Autenticidade e Carisma</div>
+        <h3>O Início</h3>
+        <p class="cta-text">
+          A Sociel nasce em 1964, na cidade de Gondomar, através de António
+          Coimbra como fábrica de armações de óculos e óculos de sol em acetato.
+          Em 1968, este rendeu-se à energia e à liderança nata de José Maria dos
+          Santos Rodrigues, um jovem de 15 anos que aos 18 anos já geria cerca
+          de 40 colaboradores. Manuel Fernando dos Santos Rodrigues, integrou
+          quadros da firma em 1970, manifestando uma apetência singular para a
+          comunicação e para a área comercial. Com a enorme vontade de ter
+          sucesso nas suas carreiras e paixão pelo ofício, os dois irmãos,
+          lutaram com seriedade e dedicação para atingirem o seu objetivo - a
+          aquisição da Sociel. A capacidade de trabalho, aliada à curiosidade e
+          evolução na área da ótica foram prontamente evidenciadas. Em 1981/82,
+          anos em que a empresa apresenta uma nova gerência composta por José
+          Rodrigues, Manuel Fernando Rodrigues e António Júlio Antunes,
+          procuraram responder às necessidades dos clientes e proporcionar um
+          atendimento de maior proximidade, efetuando visitas de Norte a Sul de
+          Portugal Continental e Arquipélago da Madeira e Açores. Assim,
+          impôs-se no mercado nacional intitulando-se como uma empresa familiar,
+          resiliente e séria. Confiando na sua capacidade de trabalho, surgem
+          várias parcerias com colaboradores, grupos de óticos e oculistas e
+          novos clientes, tendo por objetivo uma relação recíproca de sucesso.
+        </p>
+        <h3>A Expansão</h3>
+        <p class="cta-text">
+          O ano de 1995 foi de grande expansão para a empresa sendo criadas
+          novas instalações devido à necessidade de maiores infra-estruturas
+          dado o volume de produção, especialmente, com as marcas Sociel,
+          Rodsant e Kanali fabricadas pelas mãos dos nossos artesãos e com
+          recurso a pequena maquinaria. Nesta fase imperou o espírito
+          empreendedor e desafiador.
+        </p>
+        <h3>O Renascimento</h3>
+        <p class="cta-text">
+          Após uma fase menos positiva no contexto nacional, já em 2011, fruto
+          do interesse dos meios de comunicação social em projetar o que se
+          fazia com excelência em Portugal, a Sociel "renasceu" com o conceito
+          de único, artesanal, qualidade e fabricado à mão em Portugal.
+        </p>
+        <h3>A Resiliência</h3>
+        <p class="cta-text">
+          Tendo por base a frase "Só os fortes resistem", em 2014, os irmãos e
+          amigos, assumem integralmente a gerência e é neste ano que se
+          assinalam os 50 anos de existência da empresa. Razões não faltaram
+          para tal comemoração, pois também se verificou um novo aumento na
+          procura pela produção à mão em Portugal. A Sociel afirma-se na área da
+          internacionalização. Em todos os produtos que desenvolve acrescento um
+          valor emocional e sentimental. Os clientes são tratados como amigos e
+          família e as nossas portas estão abertas a todos que nos procuram.
+          Atualmente, é gerida por José Rodrigues, sabendo-se porém, que Manuel
+          Fernando continua presente e com toda a força neste legado.
+        </p>
+        <h3>O Conceito</h3>
+        <p class="cta-text">
+          Em 2024, impera na Sociel o dever de manter o seu ADN e o Know-How tão
+          reconhecido em todo o mundo. Reinventa-se com a arte de articular
+          conceitos de artesão e de inovação.
+        </p>
+        <h3>A Missão e Valores</h3>
+        <p class="cta-text">
+          A empresa apresenta um conjunto de valores de responsabilidade,
+          integridade, seriedade e liderança. Importa-se com as fragilidades
+          sociais e contribuiu positivamente na comunidade e com os parceiros
+          que se identifiquem com a sua linha de atuação.
+        </p>
+      </div>
+
+      <div class="cta-img-box" role="img" aria-label="Imagem"></div>
+    </div>
+  </div>
+</div>
+<sociel-galaria-principal></sociel-galaria-principal>
+<div id="oculos" class="video">
+  <div *ngFor="let video of videoList">
+    <img [src]="video.title" *ngIf="mostrar" class="lightbox" />
+    <youtube-player [videoId]="video.videoId" [height]="315" [width]="560"
+      ><!--[height]="315" [width]="560"-->
+    </youtube-player>
+  </div>
+</div>
+
+<div class="empresa">
+  <img src="./assets/logotipo50.png" alt="" />
+  <img class="empresa-logo" src="./assets/image.png" alt="" />
+</div>

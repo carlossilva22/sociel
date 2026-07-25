@@ -1,0 +1,22 @@
+<div>
+  <button (click)="show = !show">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <div class="slide-wrapper">
+    <div *ngIf="show" [@slideInLeft] class="menu">
+      <ul>
+        <li>
+          <i class="fa-solid fa-x" (click)="show = !show"></i>
+        </li>
+
+        <li>
+          <a routerLink="/product"><h1>Categoria</h1></a>
+        </li>
+        <li>
+          <a routerLink="/galaria"><h1>Galeria</h1></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

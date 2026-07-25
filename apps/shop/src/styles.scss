@@ -1,0 +1,111 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container1 {
+  /* 1140px */
+  //max-width: 150rem;
+  padding: 0 15rem;
+  margin: 0 auto;
+}
+
+.galaria {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 15%;
+  flex-wrap: wrap;
+  padding-top: 2%;
+}
+
+.cartao {
+  margin: 5% 0;
+
+  padding: 35px;
+
+  &:hover {
+    box-shadow: 5px 5px 20px 5px #888888;
+    border: none;
+  }
+  & img {
+    width: 370px;
+    cursor: pointer;
+  }
+  & .text {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5pt;
+    font-family: 'Poppins', sans-serif;
+
+    & p {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    & .colors {
+      & .color {
+        display: inline-block;
+        justify-content: flex-end;
+        & img {
+          width: 20px;
+          height: 20px;
+          cursor: none;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  & .cat-det p {
+    margin: 0;
+    font-size: 10pt;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+  }
+
+  & .pequeno {
+    font-size: 8pt;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+  }
+}
+.categorias {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+  .galaria {
+    margin: 0 10%;
+    justify-content: center;
+  }
+}
+
+//992px
+@media screen and (max-width: 58em) {
+}
+//977px
+@media screen and (max-width: 62em) {
+  .galaria {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+//704px
+@media screen and (max-width: 44em) {
+  .galaria {
+    justify-content: center;
+  }
+}

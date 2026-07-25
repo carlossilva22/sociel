@@ -1,0 +1,45 @@
+<sociel-menus></sociel-menus>
+<div>
+  <button type="button" class="btn btn-info" (click)="goBack()">Voltar</button>
+</div>
+
+<section class="gallery mt-5 pt-5" *ngIf="produtos">
+  <div class="container">
+    <div class="img-container">
+      <img [src]="produtos.image" alt="image" id="preview" />
+      <div class="img-prev">
+        <div class="img-slide active" style="text-align: center">
+          <img [src]="produtos.image" alt="image" socielSlider />
+        </div>
+        <div class="img-slide">
+          <img [src]="produtos.image2" alt="image" socielSlider />
+        </div>
+        <div class="img-slide">
+          <img [src]="produtos.image3" alt="image" socielSlider />
+        </div>
+        <div class="img-slide">
+          <img [src]="produtos.image4" alt="image" socielSlider />
+        </div>
+        <div class="img-slide">
+          <img [src]="produtos.image5" alt="image" socielSlider />
+        </div>
+        <div class="img-slide">
+          <img [src]="produtos.image6" alt="image" socielSlider />
+        </div>
+        <div class="img-slide">
+          <img [src]="produtos.image7" alt="image" socielSlider />
+        </div>
+        <div class="img-slide">
+          <img [src]="produtos.image8" alt="image" socielSlider />
+        </div>
+        <div class="img-slide">
+          <img [src]="produtos.image9" alt="image" socielSlider />
+        </div>
+      </div>
+      <h2>Modelo: {{ produtos.modelo | uppercase }}</h2>
+      <h6>Categoria: {{ produtos.category }}</h6>
+      <h5>Material: {{ produtos.material }}</h5>
+    </div>
+  </div>
+</section>
+<sociel-footer-page></sociel-footer-page>

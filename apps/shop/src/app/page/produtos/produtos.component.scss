@@ -1,0 +1,37 @@
+.search {
+  padding-top: 200px;
+  text-align: center;
+}
+
+input {
+  width: 20%;
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+
+::ng-deep {
+  .ngx-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .ngx-pagination li {
+    border-radius: 50% !important;
+  }
+
+  .ngx-pagination li {
+    a {
+      border-radius: 50%;
+      text-decoration: none;
+    }
+  }
+}
+
+//768px
+@media (max-width: 48em) {
+  .search {
+    padding-top: 200px;
+  }
+}

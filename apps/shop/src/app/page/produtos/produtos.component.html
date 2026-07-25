@@ -1,0 +1,56 @@
+<sociel-menus></sociel-menus>
+<div class="search content">
+  <input
+    type="text"
+    pattern="Search"
+    [(ngModel)]="titulo"
+    (ngModelChange)="Search()"
+    placeholder="Procurar"
+  />
+</div>
+
+<section class="galaria container">
+  <div
+    *ngFor="
+      let produto of produtos
+        | paginate : { itemsPerPage: itemsPerPage, currentPage: p }
+    "
+  >
+    <div>
+      <div class="cartao info">
+        <img
+          [src]="produto.image"
+          alt="produto"
+          routerLink="/details/{{ produto.id }}"
+        />
+        <div class="cat-det">
+          <p>{{ produto.category }}</p>
+        </div>
+
+        <div class="text">
+          <p>{{ produto.modelo }}</p>
+          <div class="colors">
+            <div class="color">
+              <img [src]="produto.color_one" />
+            </div>
+            <div class="color">
+              <img [src]="produto.color_two" />
+            </div>
+            <div class="color">
+              <img [src]="produto.color_three" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mt-8 py-5 flex justify-center items-center">
+  <pagination-controls
+    (pageChange)="p = $event"
+    previousLabel=""
+    nextLabel=""
+  ></pagination-controls>
+</div>
+<sociel-footer-page></sociel-footer-page>

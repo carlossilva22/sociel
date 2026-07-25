@@ -1,0 +1,45 @@
+.contactos {
+  display: flex;
+  //padding: 20% 5% 5% 0;
+}
+
+.information {
+  display: flex;
+  //background-color: #a6cfd5;
+  width: 100%;
+  justify-content: space-between;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.padding {
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #bbbcbc;
+}
+
+span {
+  font-size: 0.9rem;
+}
+
+.titulo {
+  padding-bottom: 1.2rem;
+
+  font-size: 0.8rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+.button {
+  position: fixed;
+  bottom: 0;
+}

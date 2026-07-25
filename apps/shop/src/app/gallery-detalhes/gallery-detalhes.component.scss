@@ -1,0 +1,27 @@
+section {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-top: 10%;
+}
+
+.galaria-img {
+  margin: 5% 0;
+  & img {
+    width: 300px;
+  }
+}
+
+//992px
+@media screen and (max-width: 58em) {
+  section {
+    padding-top: 15%;
+  }
+}
+//768px
+@media screen and (max-width: 48em) {
+  section {
+    padding-top: 30%;
+  }
+}

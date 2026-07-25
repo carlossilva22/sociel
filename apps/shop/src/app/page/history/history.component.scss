@@ -1,0 +1,151 @@
+#oculos {
+  margin: 10% auto 5% auto;
+  gap: 50px;
+  display: flex;
+  justify-content: space-around;
+
+  max-width: 1300px;
+
+  flex-wrap: wrap;
+
+  & img {
+    width: 400px;
+  }
+}
+
+.lightbox {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#fabrica {
+  & .cta {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: #e67e22; */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+
+    background: #63ffef1a;
+    overflow: hidden;
+
+    & .cta-text-box {
+      padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+      color: #45260a;
+
+      & .heading-secondary {
+        /* color: #45260a; */
+        color: inherit;
+        margin-bottom: 3.2rem;
+        font-size: 3rem;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      & .cta-text {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        margin-bottom: 3rem;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      & .titulo {
+        font-size: 2.2rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        padding-bottom: 3%;
+      }
+
+      & h3 {
+        font-style: italic;
+        font-size: 2rem;
+      }
+    }
+
+    & .cta-img-box {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(235, 151, 78, 0.35),
+          rgba(230, 125, 34, 0.35)
+        ),
+        url('../../../assets/DSC0121.png');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.video {
+  display: flex;
+}
+
+.empresa {
+  display: flex;
+  width: 30%;
+  //border: 1px solid red;
+  margin: 0 auto 10% auto;
+  justify-content: space-between;
+  justify-items: center;
+
+  & img {
+    width: 20%;
+    height: 20%;
+  }
+
+  & .empresa-logo {
+    height: 100%;
+    margin: auto 0;
+  }
+}
+
+.container1 {
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  margin: 0 auto;
+}
+
+//1200px
+@media screen and (max-width: 75em) {
+  .container1 {
+    padding: 0;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .empresa {
+    width: 40%;
+    margin-top: 8%;
+  }
+
+  .video {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+//992px
+@media screen and (max-width: 62em) {
+  #fabrica {
+    & .cta {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+
+  //576px
+  @media screen and (max-width: 37em) {
+    .cta-text {
+      text-align: justify;
+    }
+
+    #oculos {
+      display: none;
+    }
+  }
+}

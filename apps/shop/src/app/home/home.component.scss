@@ -1,0 +1,91 @@
+section {
+}
+
+.icon-fixo {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: 100;
+
+  & .fixo {
+    display: flex;
+    flex-direction: column;
+
+    & i {
+      width: 50px;
+      color: black;
+      font-size: 3rem;
+      text-align: center;
+      background: #91d1e8;
+      padding: 20%;
+    }
+
+    & i:hover {
+      color: gray;
+    }
+  }
+}
+
+.better {
+  & img {
+    position: absolute;
+    top: 0;
+    width: 99.6%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.centro {
+  //border: 1px solid red;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vb;
+
+  & img {
+    width: 20%;
+    margin-bottom: 2%;
+  }
+
+  & h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+#oculos {
+  margin: 0% 5% 5% 5%;
+
+  display: flex;
+  justify-content: space-around;
+
+  padding: 20px 10px;
+  flex-wrap: wrap;
+  & img {
+    width: 400px;
+  }
+}
+
+//920px
+@media screen and (max-width: 58em) {
+  .centro {
+    & img {
+      width: 30%;
+    }
+  }
+}
+
+//590px
+@media screen and (max-width: 37em) {
+  .centro {
+    & img {
+      width: 40%;
+    }
+  }
+}

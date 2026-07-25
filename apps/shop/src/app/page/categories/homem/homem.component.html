@@ -1,0 +1,34 @@
+<sociel-menus></sociel-menus>
+
+<section class="categorias">
+  <div *ngFor="let produto of produtos">
+    <ng-container *ngIf="getHomem(produto)">
+      <div class="container">
+        <div class="cartao" routerLink="/details/{{ produto.id }}">
+          <img [src]="produto.image" alt="produto" />
+          <div class="cat-det">
+            <p>{{ produto.category }}</p>
+          </div>
+          <div class="text">
+            <p>
+              {{ produto.modelo }}
+            </p>
+            <div class="colors">
+              <div class="color">
+                <img [src]="produto.color_one" />
+              </div>
+              <div class="color">
+                <img [src]="produto.color_two" />
+              </div>
+              <div class="color">
+                <img [src]="produto.color_three" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>
+
+<sociel-footer-page></sociel-footer-page>
