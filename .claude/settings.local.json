@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx nx *)"
+      "Bash(npx nx *)",
+      "Bash(node -e \"console.log\\(JSON.stringify\\(require\\('./node_modules/@angular/core/package.json'\\)['ng-update'], null, 2\\)\\)\")",
+      "Bash(npm view *)",
+      "Bash(node -e \"let d='';process.stdin.on\\('data',c=>d+=c\\);process.stdin.on\\('end',\\(\\)=>{const v=JSON.parse\\(d\\);console.log\\(v.filter\\(x=>x.startsWith\\('15.2'\\)\\).slice\\(-5\\)\\)}\\)\")",
+      "Bash(node -e \"let d='';process.stdin.on\\('data',c=>d+=c\\);process.stdin.on\\('end',\\(\\)=>{const v=JSON.parse\\(d\\);console.log\\(v.filter\\(x=>x.startsWith\\('15.'\\) && !x.includes\\('-'\\)\\).slice\\(-5\\)\\)}\\)\")"
     ]
   }
 }
